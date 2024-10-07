@@ -326,30 +326,30 @@
 // ### 문제 19: Todo 리스트 함수형 프로그래밍 예제
 
 // - 함수형 프로그래밍의 개념을 활용하여 간단한 Todo 리스트 애플리케이션을 구현하세요. 항목 추가, 삭제, 완료 처리를 순수 함수로 구현하는 코드를 작성하세요.
-const todos = [
-  { id: 1, text: "함수형 프로그래밍 공부", completed: false },
-  { id: 2, text: "자바스크립트 복습", completed: true },
-  { id: 3, text: "프로젝트 아이디어 구상", completed: false },
-];
+// const todos = [
+//   { id: 1, text: "함수형 프로그래밍 공부", completed: false },
+//   { id: 2, text: "자바스크립트 복습", completed: true },
+//   { id: 3, text: "프로젝트 아이디어 구상", completed: false },
+// ];
 
-const addTodo = (todos, newTodo) => [...todos, newTodo];
+// const addTodo = (todos, newTodo) => [...todos, newTodo];
 
-const removeTodo = (todos, id) => todos.filter((todo) => todo.id !== id);
+// const removeTodo = (todos, id) => todos.filter((todo) => todo.id !== id);
 
-const toggleTodo = (todos, id) =>
-  todos.map((todo) =>
-    todo.id === id ? { ...todo, completed: !todo.completed } : todo
-  );
+// const toggleTodo = (todos, id) =>
+//   todos.map((todo) =>
+//     todo.id === id ? { ...todo, completed: !todo.completed } : todo
+//   );
 
-const incompleteTodos = todos.filter((todo) => !todo.completed);
+// const incompleteTodos = todos.filter((todo) => !todo.completed);
 
-let updatedTodos = addTodo(todos, {
-  id: 4,
-  text: "테스트 코드 작성",
-  completed: false,
-});
+// let updatedTodos = addTodo(todos, {
+//   id: 4,
+//   text: "테스트 코드 작성",
+//   completed: false,
+// });
 
-updatedTodos = toggleTodo(updatedTodos, 1);
-updatedTodos = removeTodo(updatedTodos, 2);
+// updatedTodos = toggleTodo(updatedTodos, 1);
+// updatedTodos = removeTodo(updatedTodos, 2);
 
-console.log(updatedTodos);
+// console.log(updatedTodos);
